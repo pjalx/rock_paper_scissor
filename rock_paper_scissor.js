@@ -57,18 +57,15 @@ function game(games) {
         const computerSelection = computerPlay();
         console.log(`The computer selects ${computerSelection}.`)
         if (playerSelection == computerSelection) {
-            console.log(`The player selects ${playerSelection}.
-            It's a tie, ${playerSelection} = ${computerSelection}.`);
+            console.log(`It's a tie, ${playerSelection} = ${computerSelection}.`);
             ties++;
         }
         else if (playerSelection == `Rock`) {
             if (computerSelection == `Paper`) {
-                console.log(`The player selects ${playerSelection}.
-                You lose, ${computerSelection} beats ${playerSelection}!`);
+                console.log(`You lose, ${computerSelection} beats ${playerSelection}!`);
                 compWins++;
             } else {
-                console.log(`The player selects ${playerSelection}.
-                You win, ${playerSelection} beats ${computerSelection}!`);
+                console.log(`You win, ${playerSelection} beats ${computerSelection}!`);
                 playerWins++;
             }
         }
