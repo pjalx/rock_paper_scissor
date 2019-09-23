@@ -50,6 +50,9 @@ function game(games) {
         gamesPlayed++;       
         let playerSelection = prompt(`Rock Paper or Scissor, Please Choose One`, ``);
         playerSelection = playerSelection[0].toUpperCase() + playerSelection.slice(1).toLowerCase();
+        while (playerSelection != `Rock` && playerSelection != `Paper` && playerSelection != `Scissor`) {
+            playerSelection = prompt(`Please Choose Either Rock, Paper or Scissor`);
+        }
         const computerSelection = computerPlay();
         console.log(`The computer selects ${computerSelection}.`)
         if(playerSelection == computerSelection) {
