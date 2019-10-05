@@ -9,16 +9,30 @@
 
 <body>
     <div id="main">
+        <h1>Rock, Paper, Scissor!</h1>
         <div id="score" class="info">
-            <div>ddd</div>
-            <div>ddd</div>
+            <table>
+                <tr>
+                    <th colspan="3">Score</th>
+                </tr>
+                <tr>
+                    <th>User</th>
+                    <th>Computer</th>
+                    <th>Draws</th>
+                </tr>
+                <tr>
+                    <th class="score" id="userscore">0</th>
+                    <th class="score" id="computerscore">0</th>
+                    <th class="score" id="draws">0</th>
+                </tr>
+            </table>
         </div>
         <div id="buts_div">
             <button type="button" class="but" value="Rock">Rock</button>
             <button type="button" class="but" value="Paper">Paper</button>
             <button type="button" class="but" value="Scissor">Scissor</button>
         </div>
-        <div class="info"><span id="compselect"></span></div>
+        <div class="info"><span id="result"></span></div>
         <div class="info">Games Played = <span id="gamesplayed">0</span></div>
     </div>
 </body>
